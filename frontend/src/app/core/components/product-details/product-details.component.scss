@@ -1,0 +1,39 @@
+.product-details {
+  border-radius: 0.75rem;
+  background-color: #fff;
+
+  .product-image {
+    max-height: 300px;
+    object-fit: contain;
+    margin: 1rem auto;
+  }
+
+  .product-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .price {
+    font-weight: 700;
+    color: theme-color("primary");
+  }
+
+  .description {
+    font-size: 0.95rem;
+    color: #6c757d;
+  }
+
+  .stock {
+    font-weight: 500;
+  }
+
+  .actions button {
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .meta {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+  }
+}

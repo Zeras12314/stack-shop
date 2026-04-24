@@ -1,0 +1,7 @@
+<div class="search d-flex">
+    <input #myInput class="form-control me-2 rounded-pil" type="text" placeholder="Search products..."
+        (keyup.enter)="doSearch(myInput.value)">
+    <button class="btn btn-primary rounded-pill px-4" (click)="doSearch(myInput.value)">
+        <i class="bi bi-search"></i>
+    </button>
+</div>

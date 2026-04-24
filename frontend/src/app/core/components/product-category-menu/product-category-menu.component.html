@@ -1,0 +1,8 @@
+<ul class="nav nav-pills flex-column mb-auto">
+    @for(category of productCategories; track category.id) {
+    <li class="nav-item">
+        <a routerLink="/category/{{category.id}}" routerLinkActive="active"
+            class="nav-link text-dark">{{category.categoryName}}</a>
+    </li>
+    }
+</ul>

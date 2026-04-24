@@ -1,0 +1,14 @@
+  .nav-link {
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.25rem;
+    &.active {
+      background-color: theme-color("primary");
+      color: #fff !important;
+    }
+    &:hover {
+      background-color: theme-color("primary") !important;
+      // color: #fff !important;
+    }
+  }

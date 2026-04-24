@@ -1,0 +1,44 @@
+<div class="d-flex min-vh-100">
+  <!-- SIDEBAR -->
+  <aside class="sidebar bg-white border-end d-none d-lg-flex flex-column p-3">
+    <a routerLink="/" class="d-flex align-items-center mb-4 text-decoration-none cursor-pointer">
+      <img src="logo.png" alt="stackshop" class="img-fluid" style="max-height:150px;">
+      <!-- <span class="fs-4 ms-2 fw-bold text-primary">Luv2Shop</span> -->
+    </a>
+    <hr>
+    <app-product-category-menu></app-product-category-menu>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="flex-grow-1 d-flex flex-column">
+    <!-- HEADER -->
+    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-3">
+      <a class="navbar-brand d-lg-none" routerLink="/">
+        <img src="logo.png" alt="stackshop" style="max-height:80px;">
+      </a>
+      
+     <!-- search component -->
+      <app-search class="d-flex flex-grow-1 mx-3"></app-search>
+
+      <!-- cart status component --> 
+      <app-cart-status></app-cart-status>
+
+    </header>
+
+    <!-- PRODUCT LIST -->
+    <main class="flex-grow-1 p-4 bg-light">
+      <router-outlet></router-outlet>
+      <!-- <app-product-list></app-product-list> -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-3 mt-auto text-center">
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">About Us</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Help</a></li>
+      </ul>
+      <small class="d-block mt-2">&copy; 2026 Luv2Shop. All rights reserved.</small>
+    </footer>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="container my-4">
+    @if(product) {
+    <div class="product-details card shadow-sm p-4">
+        <div class="row">
+
+            <!-- Product Image -->
+            <div class="col-md-5 text-center">
+                <img [src]="getProductImage(product.imageData)" alt="product" class="img-fluid product-image">
+            </div>
+
+            <!-- Product Info -->
+            <div class="col-md-7">
+
+                <h3 class="product-title">{{ product.name }}</h3>
+                <p class="text-muted mb-2">SKU: {{ product.sku }}</p>
+
+                <h4 class="price mb-3">₱ {{ product.unitPrice }}</h4>
+
+                <p class="description">
+                    {{ product.description }}
+                </p>
+
+                <!-- Stock -->
+                <p class="stock"
+                    [ngClass]="{'text-success': product.unitsInStock > 0, 'text-danger': product.unitsInStock === 0}">
+                    {{ product.unitsInStock > 0 ? 'In Stock' : 'Out of Stock' }}
+                </p>
+
+                <!-- Actions -->
+                <div class="actions mt-4">
+                    <button class="btn btn-primary me-2">
+                        Add to Cart
+                    </button>
+                    <!-- <button class="btn btn-outline-secondary">
+                        Back
+                    </button> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    } @else {
+    <div class="alert alert-warning text-center" role="alert">
+        Product not found.
+    </div>
+    }
+</div>

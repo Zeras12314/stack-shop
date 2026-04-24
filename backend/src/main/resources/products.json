@@ -1,0 +1,1152 @@
+[
+  {
+    "sku": "BOOK-TECH-1000",
+    "name": "Crash Course in Python",
+    "description": "Learn Python at your own pace...",
+    "imageUrl": "books/book-luv2code-1000.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 14.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1001",
+    "name": "Become a Guru in JavaScript",
+    "description": "Learn JavaScript at your own pace...",
+    "imageUrl": "books/book-luv2code-1001.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 20.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1002",
+    "name": "Exploring Vue.js",
+    "description": "Learn Exploring Vue.js at your own pace...",
+    "imageUrl": "books/book-luv2code-1002.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 14.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1003",
+    "name": "Advanced Techniques in Big Data",
+    "description": "Learn Big Data at your own pace...",
+    "imageUrl": "books/book-luv2code-1003.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 13.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1004",
+    "name": "Crash Course in Big Data",
+    "description": "Learn Big Data at your own pace...",
+    "imageUrl": "books/book-luv2code-1004.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1005",
+    "name": "JavaScript Cookbook",
+    "description": "Learn JavaScript Cookbook at your own pace...",
+    "imageUrl": "books/book-luv2code-1005.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 23.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1006",
+    "name": "Beginners Guide to SQL",
+    "description": "Learn SQL at your own pace...",
+    "imageUrl": "books/book-luv2code-1006.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 14.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1007",
+    "name": "Advanced Techniques in JavaScript",
+    "description": "Learn JavaScript at your own pace...",
+    "imageUrl": "books/book-luv2code-1007.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1008",
+    "name": "Introduction to Spring Boot",
+    "description": "Learn Spring Boot at your own pace...",
+    "imageUrl": "books/book-luv2code-1008.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 25.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1009",
+    "name": "Become a Guru in React.js",
+    "description": "Learn React.js at your own pace...",
+    "imageUrl": "books/book-luv2code-1009.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 23.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1010",
+    "name": "Beginners Guide to Data Science",
+    "description": "Learn Data Science at your own pace...",
+    "imageUrl": "books/book-luv2code-1010.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 24.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1011",
+    "name": "Advanced Techniques in Java",
+    "description": "Learn Java at your own pace...",
+    "imageUrl": "books/book-luv2code-1011.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 19.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1012",
+    "name": "Exploring DevOps",
+    "description": "Learn Exploring DevOps at your own pace...",
+    "imageUrl": "books/book-luv2code-1012.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 24.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1013",
+    "name": "The Expert Guide to SQL",
+    "description": "Learn SQL at your own pace...",
+    "imageUrl": "books/book-luv2code-1013.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 19.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1014",
+    "name": "Introduction to SQL",
+    "description": "Learn SQL at your own pace...",
+    "imageUrl": "books/book-luv2code-1014.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 22.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1015",
+    "name": "The Expert Guide to JavaScript",
+    "description": "Learn JavaScript at your own pace...",
+    "imageUrl": "books/book-luv2code-1015.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 22.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1016",
+    "name": "Exploring React.js",
+    "description": "Learn Exploring React.js at your own pace...",
+    "imageUrl": "books/book-luv2code-1016.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 27.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1017",
+    "name": "Advanced Techniques in React.js",
+    "description": "Learn React.js at your own pace...",
+    "imageUrl": "books/book-luv2code-1017.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 13.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1018",
+    "name": "Introduction to C#",
+    "description": "Learn C# at your own pace...",
+    "imageUrl": "books/book-luv2code-1018.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 26.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1019",
+    "name": "Crash Course in JavaScript",
+    "description": "Learn JavaScript at your own pace...",
+    "imageUrl": "books/book-luv2code-1019.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 13.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1020",
+    "name": "Introduction to Machine Learning",
+    "description": "Learn Machine Learning at your own pace...",
+    "imageUrl": "books/book-luv2code-1020.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 19.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1021",
+    "name": "Become a Guru in Java",
+    "description": "Learn Java at your own pace...",
+    "imageUrl": "books/book-luv2code-1021.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1022",
+    "name": "Introduction to Python",
+    "description": "Learn Python at your own pace...",
+    "imageUrl": "books/book-luv2code-1022.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 26.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1023",
+    "name": "Advanced Techniques in C#",
+    "description": "Learn C# at your own pace...",
+    "imageUrl": "books/book-luv2code-1023.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 22.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "BOOK-TECH-1024",
+    "name": "The Expert Guide to Machine Learning",
+    "description": "Learn Machine Learning at your own pace...",
+    "imageUrl": "books/book-luv2code-1024.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": { "id": 1 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1000",
+    "name": "Coffee Mug - Express",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1000.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1001",
+    "name": "Coffee Mug - Cherokee",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1001.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1002",
+    "name": "Coffee Mug - Sweeper",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1002.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1003",
+    "name": "Coffee Mug - Aspire",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1003.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1004",
+    "name": "Coffee Mug - Dorian",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1004.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1005",
+    "name": "Coffee Mug - Columbia",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1005.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1006",
+    "name": "Coffee Mug - Worthing",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1006.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1007",
+    "name": "Coffee Mug - Oak Cliff",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1007.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1008",
+    "name": "Coffee Mug - Tachyon",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1008.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1009",
+    "name": "Coffee Mug - Pan",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1009.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1010",
+    "name": "Coffee Mug - Phase",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1010.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1011",
+    "name": "Coffee Mug - Falling",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1011.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1012",
+    "name": "Coffee Mug - Wispy",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1012.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1013",
+    "name": "Coffee Mug - Arlington",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1013.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1014",
+    "name": "Coffee Mug - Gazing",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1014.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1015",
+    "name": "Coffee Mug - Azura",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1015.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1016",
+    "name": "Coffee Mug - Quantum Leap",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1016.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1017",
+    "name": "Coffee Mug - Light Years",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1017.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1018",
+    "name": "Coffee Mug - Taylor",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1018.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1019",
+    "name": "Coffee Mug - Gracia",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1019.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1020",
+    "name": "Coffee Mug - Relax",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1020.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1021",
+    "name": "Coffee Mug - Windermere",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1021.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1022",
+    "name": "Coffee Mug - Prancer",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1022.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1023",
+    "name": "Coffee Mug - Recursion",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1023.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "COFFEEMUG-1024",
+    "name": "Coffee Mug - Treasure",
+    "description": "Elegant coffee mug with an amazing fractal design.",
+    "imageUrl": "coffeemugs/coffeemug-luv2code-1024.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 18.99,
+    "category": { "id": 2 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1000",
+    "name": "Mouse Pad - Express",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1000.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1001",
+    "name": "Mouse Pad - Cherokee",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1001.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1002",
+    "name": "Mouse Pad - Sweeper",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1002.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1003",
+    "name": "Mouse Pad - Aspire",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1003.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1004",
+    "name": "Mouse Pad - Dorian",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1004.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1005",
+    "name": "Mouse Pad - Columbia",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1005.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1006",
+    "name": "Mouse Pad - Worthing",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1006.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1007",
+    "name": "Mouse Pad - Oak Cliff",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1007.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1008",
+    "name": "Mouse Pad - Tachyon",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1008.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1009",
+    "name": "Mouse Pad - Pan",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1009.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1010",
+    "name": "Mouse Pad - Phase",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1010.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1011",
+    "name": "Mouse Pad - Falling",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1011.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1012",
+    "name": "Mouse Pad - Wispy",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1012.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1013",
+    "name": "Mouse Pad - Arlington",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1013.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1014",
+    "name": "Mouse Pad - Gazing",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1014.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1015",
+    "name": "Mouse Pad - Azura",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1015.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1016",
+    "name": "Mouse Pad - Quantum Leap",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1016.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1017",
+    "name": "Mouse Pad - Light Years",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1017.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1018",
+    "name": "Mouse Pad - Taylor",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1018.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1019",
+    "name": "Mouse Pad - Gracia",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1019.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1020",
+    "name": "Mouse Pad - Relax",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1020.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1021",
+    "name": "Mouse Pad - Windermere",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1021.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1022",
+    "name": "Mouse Pad - Prancer",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1022.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1023",
+    "name": "Mouse Pad - Recursion",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1023.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "MOUSEPAD-1024",
+    "name": "Mouse Pad - Treasure",
+    "description": "Fractal images are amazing!",
+    "imageUrl": "mousepads/mousepad-luv2code-1024.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 17.99,
+    "category": { "id": 3 },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1000",
+    "name": "Luggage Tag - Cherish",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1000.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1001",
+    "name": "Luggage Tag - Adventure",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1001.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1002",
+    "name": "Luggage Tag - Skyline",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1002.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1003",
+    "name": "Luggage Tag - River",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1003.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1004",
+    "name": "Luggage Tag - Trail Steps",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1004.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1005",
+    "name": "Luggage Tag - Blooming",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1005.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1006",
+    "name": "Luggage Tag - Park",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1006.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1007",
+    "name": "Luggage Tag - Beauty",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1007.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1008",
+    "name": "Luggage Tag - Water Fall",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1008.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1009",
+    "name": "Luggage Tag - Trail",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1009.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1010",
+    "name": "Luggage Tag - Skyscraper",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1010.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1011",
+    "name": "Luggage Tag - Leaf",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1011.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1012",
+    "name": "Luggage Tag - Jungle",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1012.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1013",
+    "name": "Luggage Tag - Shoreline",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1013.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1014",
+    "name": "Luggage Tag - Blossom",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1014.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1015",
+    "name": "Luggage Tag - Lock",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1015.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1016",
+    "name": "Luggage Tag - Cafe",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1016.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1017",
+    "name": "Luggage Tag - Darling",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1017.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1018",
+    "name": "Luggage Tag - Full Stack",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1018.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1019",
+    "name": "Luggage Tag - Courtyard",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1019.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1020",
+    "name": "Luggage Tag - Coaster",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1020.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1021",
+    "name": "Luggage Tag - Bridge",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1021.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1022",
+    "name": "Luggage Tag - Sunset",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1022.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1023",
+    "name": "Luggage Tag - Flames",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1023.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  },
+  {
+    "sku": "LUGGAGETAG-1024",
+    "name": "Luggage Tag - Countryside",
+    "description": "This luggage tag will help you identify your luggage. The luggage tag is very unique and it will stand out from the crowd. The luggage tag is created out of a rugged and durable plastic. Buy this luggage tag now to make it easy to identify your luggage!",
+    "imageUrl": "luggagetags/luggagetag-luv2code-1024.png",
+    "active": true,
+    "unitsInStock": 100,
+    "unitPrice": 16.99,
+    "category": {
+      "id": 4
+    },
+    "dateCreated": null
+  }
+]
