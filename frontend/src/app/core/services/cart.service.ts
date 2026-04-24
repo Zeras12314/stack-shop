@@ -21,6 +21,7 @@ export class CartService {
       existingCartItem = this.cartItems.find(item => item.id === cartitem.id);
     }
 
+    // test commit from frontend
     // check if we found it in the cart
     alreadyExistsInCart = (existingCartItem != undefined);
 
@@ -34,6 +35,8 @@ export class CartService {
 
     // compute cart total price and total quantity
     this.computeCartTotals();
+
+    // test frontend commit
   }
 
   computeCartTotals() {
