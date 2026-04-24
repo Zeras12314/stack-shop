@@ -36,7 +36,6 @@ export class CartService {
     // compute cart total price and total quantity
     this.computeCartTotals();
 
-    // test frontend commit
   }
 
   computeCartTotals() {
