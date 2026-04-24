@@ -7,6 +7,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { NgbDropdownModule, NgbPagination } from '@ng-bootstrap/ng-bootstrap';
 import { CartItem } from '../../../common/cart-item';
 import { CartService } from '../../services/cart.service';
+import { UtilsService } from '../../services/utils.service';
 
 @Component({
   selector: 'app-product-list',
@@ -31,6 +32,7 @@ export class ProductListComponent {
   cartService = inject(CartService);
   route = inject(ActivatedRoute);
   sanitizer = inject(DomSanitizer);
+  utilsService = inject(UtilsService);
 
 
   ngOnInit() {
@@ -63,8 +65,7 @@ export class ProductListComponent {
   };
 
   getProductImage(imageData: string) {
-    // We tell the browser this string is an image/png
-    return `data:image/png;base64,${imageData}`;
+    return this.utilsService.getProductImage(imageData);
   }
 
   handleListProducts() {
