@@ -16,7 +16,6 @@ public class ProductCategory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private Long id;
-//    test backend
 
     @Column(name="category_name")
     private String categoryName;
