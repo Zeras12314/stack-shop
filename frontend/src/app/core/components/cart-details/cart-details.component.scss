@@ -33,7 +33,7 @@ $breakpoint-lg: 992px;
 }
 
 .cart-image {
-  max-height: 70px;
+  max-height: 200px;
   object-fit: contain;
 
   @media (max-width: $breakpoint-sm) {
