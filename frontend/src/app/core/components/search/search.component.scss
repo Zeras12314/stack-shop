@@ -1,3 +1,48 @@
+:host {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+
 .search {
-  flex: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 0; // 🚀 critical fix
+  gap: 0.5rem;  // replaces me-2
+}
+
+/* INPUT */
+.search-input {
+  flex: 1;
+  min-width: 0;
+
+  border-radius: 50px;
+  padding: 0.45rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* BUTTON */
+.search-btn {
+  flex-shrink: 0;
+
+  border-radius: 50px;
+  padding: 0.45rem 0.9rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 576px) {
+
+  .search-input {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .search-btn {
+    padding: 0.35rem 0.75rem;
+  }
 }

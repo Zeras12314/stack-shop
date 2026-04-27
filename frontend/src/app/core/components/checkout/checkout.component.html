@@ -1,0 +1,245 @@
+<div class="container my-4">
+  <div class="checkout-details card shadow-sm p-4">
+
+    <h3 class="mb-4 cart-title">Checkout</h3>
+
+    <form [formGroup]="checkoutForm">
+
+      <div formGroupName="customer">
+
+        <h5 class="section-label mb-3">Customer Information</h5>
+
+        <!-- First Name & Last Name -->
+        <div class="row g-3 mb-3">
+
+          <div class="col-12 col-md-6">
+            <label class="form-label field-label" for="firstName">First Name</label>
+            <input id="firstName" type="text" class="form-control checkout-input" formControlName="firstName"
+              placeholder="Enter first name" />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label field-label" for="lastName">Last Name</label>
+            <input id="lastName" type="text" class="form-control checkout-input" formControlName="lastName"
+              placeholder="Enter last name" />
+          </div>
+
+        </div>
+
+        <!-- Email -->
+        <div class="row g-3 mb-4">
+          <div class="col-12">
+            <label class="form-label field-label" for="email">Email Address</label>
+            <input id="email" type="email" class="form-control checkout-input" formControlName="email"
+              placeholder="Enter email address" />
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Shipping Address -->
+      <div formGroupName="shippingAddress">
+
+        <h5 class="section-label mb-3">Shipping Address</h5>
+
+        <!-- Country drodown -->
+        <div class="row g-3 mb-3">
+          <div class="col-12 col-md-6">
+            <label class="form-label field-label" for="country">Country</label>
+            <select id="country" class="form-control checkout-input" formControlName="country">
+              <option value="">Select country</option>
+              <option value="USA">United States</option>
+              <option value="CAN">Canada</option>
+              <option value="UK">United Kingdom</option>
+              <!-- Add more countries as needed -->
+            </select>
+          </div>
+        </div>
+
+
+        <!-- Street -->
+        <div class="row g-3 mb-3">
+          <div class="col-12">
+            <label class="form-label field-label" for="street">Street</label>
+            <input id="street" type="text" class="form-control checkout-input" formControlName="street"
+              placeholder="Enter street address" />
+          </div>
+        </div>
+
+        <!-- City & State -->
+        <div class="row g-3 mb-3">
+          <div class="col-12 col-md-6">
+            <label class="form-label field-label" for="city">City</label>
+            <input id="city" type="text" class="form-control checkout-input" formControlName="city"
+              placeholder="Enter city" />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label field-label" for="state">State / Province</label>
+            <input id="state" type="text" class="form-control checkout-input" formControlName="state"
+              placeholder="Enter state" />
+          </div>
+        </div>
+
+        <!-- Zip -->
+        <div class="row g-3 mb-4">
+          <div class="col-12 col-md-6">
+            <label class="form-label field-label" for="zipCode">Zip Code</label>
+            <input id="zipCode" type="text" class="form-control checkout-input" formControlName="zipCode"
+              placeholder="Enter zip code" />
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Same as shipping address -->
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="sameAsShipping" (change)="sameAsShipping($event)">
+        <label class="form-check-label" for="sameAsShipping">Same as shipping address</label>
+      </div>
+
+      <!-- Billing Address -->
+      <div formGroupName="billingAddress">
+
+        <h5 class="section-label mb-3">Billing Address</h5>
+
+        <!-- Country drodown -->
+        <div class="row g-3 mb-3">
+          <div class="col-12 col-md-6">
+            <label class="form-label field-label" for="country">Country</label>
+            <select id="country" class="form-control checkout-input" formControlName="country">
+              <option value="">Select country</option>
+              <option value="USA">United States</option>
+              <option value="CAN">Canada</option>
+              <option value="UK">United Kingdom</option>
+              <!-- Add more countries as needed -->
+            </select>
+          </div>
+        </div>
+
+
+        <!-- Street -->
+        <div class="row g-3 mb-3">
+          <div class="col-12">
+            <label class="form-label field-label" for="street">Street</label>
+            <input id="street" type="text" class="form-control checkout-input" formControlName="street"
+              placeholder="Enter street address" />
+          </div>
+        </div>
+
+        <!-- City & State -->
+        <div class="row g-3 mb-3">
+          <div class="col-12 col-md-6">
+            <label class="form-label field-label" for="city">City</label>
+            <input id="city" type="text" class="form-control checkout-input" formControlName="city"
+              placeholder="Enter city" />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label field-label" for="state">State / Province</label>
+            <input id="state" type="text" class="form-control checkout-input" formControlName="state"
+              placeholder="Enter state" />
+          </div>
+        </div>
+
+        <!-- Zip -->
+        <div class="row g-3 mb-4">
+          <div class="col-12 col-md-6">
+            <label class="form-label field-label" for="zipCode">Zip Code</label>
+            <input id="zipCode" type="text" class="form-control checkout-input" formControlName="zipCode"
+              placeholder="Enter zip code" />
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Credit card -->
+      <div formGroupName="creditCard">
+
+        <h5 class="section-label mb-3">Payment Details</h5>
+
+        <!-- Card Type -->
+        <div class="row g-3 mb-3">
+          <div class="col-12 col-md-6">
+            <label class="form-label field-label">Card Type</label>
+            <select class="form-control checkout-input" formControlName="cartType">
+              <option value="">Select</option>
+              <option value="Visa">Visa</option>
+              <option value="MasterCard">MasterCard</option>
+              <option value="Amex">American Express</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label field-label">Name on Card</label>
+            <input type="text" class="form-control checkout-input" formControlName="nameOnCard"
+              placeholder="Full name on card" />
+          </div>
+        </div>
+
+        <!-- Card Number -->
+        <div class="row g-3 mb-3">
+          <div class="col-12">
+            <label class="form-label field-label">Card Number</label>
+            <input type="text" class="form-control checkout-input" formControlName="cardNumber"
+              placeholder="XXXX XXXX XXXX XXXX" />
+          </div>
+        </div>
+
+        <!-- Security + Expiration -->
+        <div class="row g-3 mb-4">
+
+          <div class="col-6 col-md-4">
+            <label class="form-label field-label">CVV</label>
+            <input type="text" class="form-control checkout-input" formControlName="securityCode" placeholder="123" />
+          </div>
+
+          <!-- Exp month dropdown -->
+          <div class="col-6 col-md-4">
+            <label class="form-label field-label">Expiration Month</label>
+            <select class="form-control checkout-input" formControlName="expirationMonth">
+              <option value="">Select Month</option>
+              @for(month of formService.creditCardMonths(); track month) {
+              <option value="{{ month }}">{{ month }}</option>
+              }
+            </select>
+          </div>
+
+          <!-- Exp year dropdown -->
+          <div class="col-6 col-md-4">
+            <label class="form-label field-label">Expiration Year</label>
+            <select class="form-control checkout-input" formControlName="expirationYear" (change)="onChangeExpiationYear($event)">
+              <option value="">Select Year</option>
+              @for(year of formService.creditCardYears(); track year) {
+              <option value="{{ year }}">{{ year }}</option>
+              }
+              <!-- Add more years as needed -->
+            </select>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- order details -->
+      <div class="order-summary mb-4">
+        <h5 class="section-label mb-3">Order Summary</h5>
+        <p>Total Quantity: {{ totalQuantity }}</p>
+        <p>Total Price: {{ totalPrice | currency }}</p>
+      </div>
+
+      <!-- Submit -->
+      <div class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-primary w-100 checkout-btn" [disabled]="checkoutForm.invalid"
+          (click)="submitOrder(checkoutForm)">
+          Place Order
+        </button>
+      </div>
+
+
+
+    </form>
+
+  </div>
+</div>

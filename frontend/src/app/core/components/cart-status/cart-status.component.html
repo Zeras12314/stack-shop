@@ -10,7 +10,7 @@
         </span>
 
         <!-- Total -->
-        <span class="fw-semibold">₱{{ cartService.totalPrice() | number:'1.2-2' }}</span>
+        <span class="fw-semibold">{{ cartService.totalPrice() | currency }}</span>
     </a>
 
     <a routerLink="/login" class="btn btn-outline-secondary rounded-circle">

@@ -5,83 +5,85 @@
 
     @if(cartItems && cartItems.length > 0) {
 
-      <div class="cart-items">
-        @for(item of cartItems; track item.id) {
+    <div class="cart-items">
+      @for(item of cartItems; track item.id) {
 
-          <div class="cart-item row align-items-center mb-3 g-2">
+      <div class="cart-item row align-items-center mb-3 g-2">
 
-            <!-- Product Image -->
-            <div class="col-3 col-md-2 text-center">
-              <img [src]="getProductImage(item.imageData)" class="cart-image img-fluid" alt="product">
-            </div>
+        <!-- Product Image -->
+        <div class="col-3 col-md-2 text-center cursor-pointer" [routerLink]="['/products', item.id]">
 
-            <!-- Product Info -->
-            <div class="col-9 col-md-4">
-              <h5 class="item-name mb-0">{{ item.name }}</h5>
-            </div>
+          <img [src]="getProductImage(item.imageData)" class="cart-image img-fluid" alt="product">
 
-            <!-- Quantity -->
-            <div class="col-6 col-md-3 text-center">
-              <span class="mobile-label">Quantity</span>
-              <div class="quantity-control">
-                <button class="btn btn-light" (click)="decreaseQty(item)">-</button>
-                <span class="mx-2">{{ item.quantity }}</span>
-                <button class="btn btn-light" (click)="increaseQty(item)">+</button>
-              </div>
-            </div>
+        </div>
 
-            <!-- Price -->
-            <div class="col-4 col-md-2 text-end">
-              <span class="mobile-label text-end d-block">Price</span>
-              <h5 class="price mb-0">{{ (item.unitPrice * item.quantity) | currency }}</h5>
-            </div>
+        <!-- Product Info -->
+        <div class="col-9 col-md-4 cursor-pointer" [routerLink]="['/products', item.id]">
+          <h5 class="item-name mb-0 ">{{ item.name }}</h5>
+        </div>
 
-            <!-- Remove -->
-            <div class="col-2 col-md-1 text-end remove-col">
-              <button class="btn btn-sm btn-outline-danger" (click)="removeItem(item)">✕</button>
-            </div>
-
+        <!-- Quantity -->
+        <div class="col-6 col-md-3 text-center">
+          <span class="mobile-label">Quantity</span>
+          <div class="quantity-control">
+            <button class="btn btn-light" (click)="decreaseQty(item)">-</button>
+            <span class="mx-2">{{ item.quantity }}</span>
+            <button class="btn btn-light" (click)="increaseQty(item)">+</button>
           </div>
+        </div>
 
+        <!-- Price -->
+        <div class="col-4 col-md-2 text-end">
+          <span class="mobile-label text-end d-block">Price</span>
+          <h5 class="price mb-0">{{ (item.unitPrice * item.quantity) | currency }}</h5>
+        </div>
+
+        <!-- Remove -->
+        <div class="col-2 col-md-1 text-end remove-col">
+          <button class="btn btn-sm btn-outline-danger" (click)="removeItem(item)">✕</button>
+        </div>
+
+      </div>
+
+      }
+    </div>
+
+    <!-- Summary -->
+    <div class="cart-summary mt-4 p-3">
+
+      <div class="d-flex justify-content-between mb-2">
+        <span>Subtotal</span>
+        <strong>{{ subtotal | currency }}</strong>
+      </div>
+
+      <div class="d-flex justify-content-between mb-2">
+        <span>Shipping</span>
+        @if(shipping === 0) {
+        <strong class="text-success">Free</strong>
+        } @else {
+        <strong>{{ shipping | currency }}</strong>
         }
       </div>
 
-      <!-- Summary -->
-      <div class="cart-summary mt-4 p-3">
+      <hr>
 
-        <div class="d-flex justify-content-between mb-2">
-          <span>Subtotal</span>
-          <strong>{{ subtotal | currency }}</strong>
-        </div>
-
-        <div class="d-flex justify-content-between mb-2">
-          <span>Shipping</span>
-          @if(shipping === 0) {
-            <strong class="text-success">Free</strong>
-          } @else {
-            <strong>{{ shipping | currency }}</strong>
-          }
-        </div>
-
-        <hr>
-
-        <div class="d-flex justify-content-between total">
-          <span>Total</span>
-          <strong>{{ total | currency }}</strong>
-        </div>
-
-        <button class="btn btn-primary w-100 mt-3 checkout-btn">
-          Checkout
-        </button>
-
+      <div class="d-flex justify-content-between total">
+        <span>Total</span>
+        <strong>{{ total | currency }}</strong>
       </div>
+
+      <button class="btn btn-primary w-100 mt-3 checkout-btn" routerLink="/checkout">
+        Checkout
+      </button>
+
+    </div>
 
     }
 
     @else {
-      <div class="alert alert-warning text-center">
-        Your cart is empty.
-      </div>
+    <div class="alert alert-warning text-center">
+      Your cart is empty.
+    </div>
     }
 
   </div>
