@@ -17,6 +17,7 @@ public class ProductCategory {
     @Column(name="id")
     private Long id;
 
+    // test
     @Column(name="category_name")
     private String categoryName;
 
