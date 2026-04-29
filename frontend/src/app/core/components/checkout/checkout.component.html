@@ -16,12 +16,36 @@
             <label class="form-label field-label" for="firstName">First Name</label>
             <input id="firstName" type="text" class="form-control checkout-input" formControlName="firstName"
               placeholder="Enter first name" />
+            @if(firstName.invalid && (firstName.dirty || firstName.touched)) {
+            @if(firstName.errors?.['required'] || firstName.errors?.['notOnlyWhitespace']) {
+            <small class="text-danger  mt-1">
+              First name is required.
+            </small>
+            }@else if(firstName.errors?.['minlength']){
+            <small class="text-danger  mt-1">
+              First name must be at least 2 characters long.
+            </small>
+            }
+
+            }
+
           </div>
+
 
           <div class="col-12 col-md-6">
             <label class="form-label field-label" for="lastName">Last Name</label>
             <input id="lastName" type="text" class="form-control checkout-input" formControlName="lastName"
               placeholder="Enter last name" />
+            @if(lastName.invalid && (lastName.dirty || lastName.touched)) {
+            @if(lastName.errors?.['required'] || lastName.errors?.['notOnlyWhitespace']) {
+            <small class="text-danger  mt-1">
+              Last name is required.
+            </small>
+            }@else if(lastName.errors?.['minlength']) {
+            <small class="text-danger  mt-1">
+              Last name must be at least 2 characters long.
+            </small>
+            }}
           </div>
 
         </div>
@@ -32,6 +56,17 @@
             <label class="form-label field-label" for="email">Email Address</label>
             <input id="email" type="email" class="form-control checkout-input" formControlName="email"
               placeholder="Enter email address" />
+            @if(email.invalid && (email.dirty || email.touched)) {
+            @if(email.errors?.['required']) {
+            <small class="text-danger  mt-1">Email is required.
+            </small>
+            }
+            @if(email.errors?.['email']) {
+            <small class="text-danger  mt-1">
+              Please enter a valid email address.
+            </small>
+            }
+            }
           </div>
         </div>
 
@@ -47,13 +82,22 @@
         <div class="row g-3 mb-3">
           <div class="col-12 col-md-6">
             <label class="form-label field-label" for="country">Country</label>
-            <select id="country" class="form-control checkout-input" formControlName="country">
-              <option value="">Select country</option>
-              <option value="USA">United States</option>
-              <option value="CAN">Canada</option>
-              <option value="UK">United Kingdom</option>
-              <!-- Add more countries as needed -->
-            </select>
+            <div class="select-wrapper">
+              <select id="country" class="form-control checkout-input custom-select" formControlName="country"
+                (change)="onCountryChange($event, 'shippingAddress')">
+                <option value="" disabled>Select country</option>
+                @for(country of countries$ | async; track country.code) {
+                <option value="{{ country.code }}">{{ country.name }}</option>
+                }
+              </select>
+
+              @if(shippingAddressCountry.invalid && (shippingAddressCountry.dirty || shippingAddressCountry.touched)) {
+              @if(shippingAddressCountry.errors?.['required']) {
+              <small class="text-danger  mt-1">Country is required.
+              </small>}
+              }
+            </div>
+
           </div>
         </div>
 
@@ -65,6 +109,16 @@
             <input id="street" type="text" class="form-control checkout-input" formControlName="street"
               placeholder="Enter street address" />
           </div>
+          @if(shippingAddressStreet.invalid && (shippingAddressStreet.dirty || shippingAddressStreet.touched)) {
+          @if(shippingAddressStreet.errors?.['required'] || shippingAddressStreet.errors?.['notOnlyWhitespace']) {
+          <small class="text-danger  mt-1">
+            Street address is required.
+          </small>
+          } @else if(shippingAddressStreet.errors?.['minlength']) {
+          <small class="text-danger  mt-1">
+            Street address must be at least 2 characters long.
+          </small>
+          }}
         </div>
 
         <!-- City & State -->
@@ -73,13 +127,44 @@
             <label class="form-label field-label" for="city">City</label>
             <input id="city" type="text" class="form-control checkout-input" formControlName="city"
               placeholder="Enter city" />
+            @if(shippingAddressCity.invalid && (shippingAddressCity.dirty || shippingAddressCity.touched)) {
+            @if(shippingAddressCity.errors?.['required'] || shippingAddressCity.errors?.['notOnlyWhitespace']) {
+            <small class="text-danger  mt-1">
+              City is required.
+            </small>
+            }
+            @else if(shippingAddressCity.errors?.['minlength']) {
+            <small class="text-danger  mt-1">
+              City must be at least 2 characters long.
+            </small>
+            }
+            }
           </div>
 
-          <div class="col-12 col-md-6">
-            <label class="form-label field-label" for="state">State / Province</label>
-            <input id="state" type="text" class="form-control checkout-input" formControlName="state"
-              placeholder="Enter state" />
+          <div class="row g-3 mb-3">
+            <div class="col-12 col-md-6">
+              <label class="form-label field-label" for="state">State</label>
+
+              <div class="select-wrapper">
+                <select id="state" class="form-control checkout-input custom-select" formControlName="state">
+                  <option value="" disabled>Select State</option>
+                  @for(state of shippingAddressStates$ | async; track state) {
+                  <option value="{{ state.name }}">{{ state.name }}</option>
+                  }
+                </select>
+                @if(shippingAddressState.invalid && (shippingAddressState.dirty || shippingAddressState.touched)) {
+                @if(shippingAddressState.errors?.['required'] ||
+                shippingAddressState.errors?.['notOnlyWhitespace']) {
+                <small class="text-danger  mt-1">
+                  State is required.
+                </small>
+                }
+                }
+              </div>
+
+            </div>
           </div>
+
         </div>
 
         <!-- Zip -->
@@ -88,6 +173,17 @@
             <label class="form-label field-label" for="zipCode">Zip Code</label>
             <input id="zipCode" type="text" class="form-control checkout-input" formControlName="zipCode"
               placeholder="Enter zip code" />
+            @if(shippingAddressZipCode.invalid && (shippingAddressZipCode.dirty || shippingAddressZipCode.touched)) {
+            @if(shippingAddressZipCode.errors?.['required']) {
+            <small class="text-danger  mt-1">
+              Zip code is required.
+            </small>
+            } @else if(shippingAddressZipCode.errors?.['minlength']) {
+            <small class="text-danger  mt-1">
+              Zip code must be at least 2 characters long.
+            </small>
+            }
+            }
           </div>
         </div>
 
@@ -95,11 +191,13 @@
 
       <!-- Same as shipping address -->
       <div class="form-check mb-3">
-        <input type="checkbox" class="form-check-input" id="sameAsShipping" (change)="sameAsShipping($event)">
+        <input [checked]="isSameAsShipping()" type="checkbox" class="form-check-input" id="sameAsShipping"
+          (change)="toggleBillingAddressForm($event)">
         <label class="form-check-label" for="sameAsShipping">Same as shipping address</label>
       </div>
 
       <!-- Billing Address -->
+      @if (!isSameAsShipping()) {
       <div formGroupName="billingAddress">
 
         <h5 class="section-label mb-3">Billing Address</h5>
@@ -108,13 +206,20 @@
         <div class="row g-3 mb-3">
           <div class="col-12 col-md-6">
             <label class="form-label field-label" for="country">Country</label>
-            <select id="country" class="form-control checkout-input" formControlName="country">
-              <option value="">Select country</option>
-              <option value="USA">United States</option>
-              <option value="CAN">Canada</option>
-              <option value="UK">United Kingdom</option>
-              <!-- Add more countries as needed -->
-            </select>
+            <div class="select-wrapper">
+              <select id="country" class="form-control checkout-input custom-select" formControlName="country"
+                (change)="onCountryChange($event, 'billingAddress')">
+                <option value="" disabled>Select country</option>
+                @for(country of countries$ | async; track country.code) {
+                <option value="{{ country.code }}">{{ country.name }}</option>
+                }
+              </select>
+              @if(billingAddressCountry.invalid && (billingAddressCountry.dirty || billingAddressCountry.touched)) {
+              @if(billingAddressCountry.errors?.['required']) {
+              <small class="text-danger  mt-1">Country is required.</small>
+              }
+              }
+            </div>
           </div>
         </div>
 
@@ -126,6 +231,17 @@
             <input id="street" type="text" class="form-control checkout-input" formControlName="street"
               placeholder="Enter street address" />
           </div>
+          @if(billingAddressStreet.invalid && (billingAddressStreet.dirty || billingAddressStreet.touched)) {
+          @if(billingAddressStreet.errors?.['required'] || billingAddressStreet.errors?.['notOnlyWhitespace']) {
+          <small class="text-danger  mt-1">
+            Street address is required.
+          </small>
+          } @else if(billingAddressStreet.errors?.['minlength']) {
+          <small class="text-danger  mt-1">
+            Street address must be at least 2 characters long.
+          </small>
+          }
+          }
         </div>
 
         <!-- City & State -->
@@ -134,12 +250,42 @@
             <label class="form-label field-label" for="city">City</label>
             <input id="city" type="text" class="form-control checkout-input" formControlName="city"
               placeholder="Enter city" />
+            @if(billingAddressCity.invalid && (billingAddressCity.dirty || billingAddressCity.touched)) {
+            @if(billingAddressCity.errors?.['required'] || billingAddressCity.errors?.['notOnlyWhitespace']) {
+            <small class="text-danger  mt-1">
+              City is required.
+            </small>
+            }
+            @else if(billingAddressCity.errors?.['minlength']) {
+            <small class="text-danger  mt-1">
+              City must be at least 2 characters long.
+            </small>
+            }
+            }
           </div>
 
-          <div class="col-12 col-md-6">
-            <label class="form-label field-label" for="state">State / Province</label>
-            <input id="state" type="text" class="form-control checkout-input" formControlName="state"
-              placeholder="Enter state" />
+
+          <div class="row g-3 mb-3">
+            <div class="col-12 col-md-6">
+              <label class="form-label field-label" for="state">State</label>
+
+              <div class="select-wrapper">
+                <select id="state" class="form-control checkout-input custom-select" formControlName="state">
+                  <option value="" disabled>Select State</option>
+                  @for(state of billingAddressStates$ | async; track state) {
+                  <option value="{{ state.name }}">{{ state.name }}</option>
+                  }
+                </select>
+                @if(billingAddressState.invalid && (billingAddressState.dirty || billingAddressState.touched)) {
+                @if(billingAddressState.errors?.['required'] || billingAddressState.errors?.['notOnlyWhitespace']) {
+                <small class="text-danger  mt-1">
+                  State is required.
+                </small>
+                }
+                }
+              </div>
+
+            </div>
           </div>
         </div>
 
@@ -149,11 +295,22 @@
             <label class="form-label field-label" for="zipCode">Zip Code</label>
             <input id="zipCode" type="text" class="form-control checkout-input" formControlName="zipCode"
               placeholder="Enter zip code" />
+            @if(billingAddressZipCode.invalid && (billingAddressZipCode.dirty || billingAddressZipCode.touched)) {
+            @if(billingAddressZipCode.errors?.['required']) {
+            <small class="text-danger  mt-1">
+              Zip code is required.
+            </small>
+            } @else if(billingAddressZipCode.errors?.['minlength']) {
+            <small class="text-danger  mt-1">
+              Zip code must be at least 2 characters long.
+            </small>
+            }
+            }
           </div>
         </div>
 
       </div>
-
+      }
       <!-- Credit card -->
       <div formGroupName="creditCard">
 
@@ -169,12 +326,26 @@
               <option value="MasterCard">MasterCard</option>
               <option value="Amex">American Express</option>
             </select>
+            @if(creditCardCartType.invalid && (creditCardCartType.dirty || creditCardCartType.touched)) {
+            @if(creditCardCartType.errors?.['required'] || creditCardCartType.errors?.['notOnlyWhitespace']) {
+            <small class="text-danger  mt-1">
+              Card type is required.
+            </small>
+            }
+            }
           </div>
 
           <div class="col-12 col-md-6">
             <label class="form-label field-label">Name on Card</label>
             <input type="text" class="form-control checkout-input" formControlName="nameOnCard"
               placeholder="Full name on card" />
+            @if(creditCardNameOnCard.invalid && (creditCardNameOnCard.dirty || creditCardNameOnCard.touched)) {
+            @if(creditCardNameOnCard.errors?.['required'] || creditCardNameOnCard.errors?.['notOnlyWhitespace']) {
+            <small class="text-danger  mt-1">
+              Name on card is required.
+            </small>
+            }
+            }
           </div>
         </div>
 
@@ -184,6 +355,21 @@
             <label class="form-label field-label">Card Number</label>
             <input type="text" class="form-control checkout-input" formControlName="cardNumber"
               placeholder="XXXX XXXX XXXX XXXX" />
+            @if(creditCardNumber.invalid && (creditCardNumber.dirty || creditCardNumber.touched)) {
+            @if(creditCardNumber.errors?.['required'] || creditCardNumber.errors?.['notOnlyWhitespace']) {
+            <small class="text-danger  mt-1">
+              Card number is required.
+            </small>
+            } @else if (creditCardNumber.errors?.['pattern']) {
+            <small class="text-danger  mt-1">
+              Please enter a valid card number.
+            </small>
+            } @else if(creditCardNumber.errors?.['minlength'] || creditCardNumber.errors?.['maxlength']) {
+            <small class="text-danger  mt-1">
+              Card number must be 16 digits long.
+            </small>
+            }
+            }
           </div>
         </div>
 
@@ -193,29 +379,48 @@
           <div class="col-6 col-md-4">
             <label class="form-label field-label">CVV</label>
             <input type="text" class="form-control checkout-input" formControlName="securityCode" placeholder="123" />
+            @if(creditCardSecurityCode.invalid && (creditCardSecurityCode.dirty || creditCardSecurityCode.touched)) {
+            @if(creditCardSecurityCode.errors?.['required'] || creditCardSecurityCode.errors?.['notOnlyWhitespace']) {
+            <small class="text-danger  mt-1">
+              Security code is required.
+            </small>
+            } @else if(creditCardSecurityCode.errors?.['minlength'] || creditCardSecurityCode.errors?.['maxlength']) {
+            <small class="text-danger  mt-1">
+              Security code must be 3 or 4 digits long.
+            </small>
+            } @else if(creditCardSecurityCode.errors?.['pattern']) {
+            <small class="text-danger  mt-1">
+              Please enter a valid security code.
+            </small>
+            }
+            }
           </div>
 
           <!-- Exp month dropdown -->
           <div class="col-6 col-md-4">
             <label class="form-label field-label">Expiration Month</label>
-            <select class="form-control checkout-input" formControlName="expirationMonth">
-              <option value="">Select Month</option>
-              @for(month of formService.creditCardMonths(); track month) {
-              <option value="{{ month }}">{{ month }}</option>
-              }
-            </select>
+            <div class="select-wrapper">
+              <select class="form-control checkout-input custom-select" formControlName="expirationMonth">
+                <option value="" disabled>Select Month</option>
+                @for(month of creditCardMonths; track month) {
+                <option value="{{ month }}">{{ month }}</option>
+                }
+              </select>
+            </div>
           </div>
 
           <!-- Exp year dropdown -->
           <div class="col-6 col-md-4">
             <label class="form-label field-label">Expiration Year</label>
-            <select class="form-control checkout-input" formControlName="expirationYear" (change)="onChangeExpiationYear($event)">
-              <option value="">Select Year</option>
-              @for(year of formService.creditCardYears(); track year) {
-              <option value="{{ year }}">{{ year }}</option>
-              }
-              <!-- Add more years as needed -->
-            </select>
+            <div class="select-wrapper">
+              <select class="form-control checkout-input custom-select" formControlName="expirationYear"
+                (change)="onChangeExpiationYear($event)">
+                <option value="" disabled>Select Year</option>
+                @for(year of creditCardYears; track year) {
+                <option value="{{ year }}">{{ year }}</option>
+                }
+              </select>
+            </div>
           </div>
 
         </div>
@@ -225,8 +430,8 @@
       <!-- order details -->
       <div class="order-summary mb-4">
         <h5 class="section-label mb-3">Order Summary</h5>
-        <p>Total Quantity: {{ totalQuantity }}</p>
-        <p>Total Price: {{ totalPrice | currency }}</p>
+        <p>Total Quantity: {{ cartService.totalQuantity() }}</p>
+        <p>Total Price: {{ cartService.totalPrice() | currency }}</p>
       </div>
 
       <!-- Submit -->

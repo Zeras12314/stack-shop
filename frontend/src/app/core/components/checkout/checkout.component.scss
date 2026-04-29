@@ -1,3 +1,5 @@
+@use "../../../../styles/utils.scss" as *;
+
 // Breakpoints (same as cart)
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
@@ -42,7 +44,9 @@ $breakpoint-lg: 992px;
   border: 1px solid #ddd;
   padding: 0.65rem 1rem;
   font-size: 0.95rem;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:focus {
     border-color: #0d6efd;
