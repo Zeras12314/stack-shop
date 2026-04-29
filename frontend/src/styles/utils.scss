@@ -1,0 +1,21 @@
+.select-wrapper {
+  position: relative;
+}
+
+.custom-select {
+  appearance: none; /* removes default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 2.5rem; /* space for icon */
+}
+
+.select-wrapper::after {
+  content: "▼"; /* simple caret */
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 0.8rem;
+  color: #6c757d;
+}
