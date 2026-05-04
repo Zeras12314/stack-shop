@@ -20,8 +20,6 @@ export class CheckoutComponent implements OnInit {
   formService = inject(FormService);
   cartService = inject(CartService);
   checkoutForm: FormGroup;
-  totalQuantity: number = 0;
-  totalPrice: number = 0;
   isSameAsShipping = signal<boolean>(true);
   creditCardYears: number[] = [];
   creditCardMonths: number[] = [];
@@ -66,12 +64,13 @@ export class CheckoutComponent implements OnInit {
     this.getCreditCardMonthsAndYears();
   }
 
-  submitOrder(form: FormGroup) {
-    if (form.valid) {
-      console.log('Order submitted:', form.value);
+  submitOrder() {
+    const checkoutForm = this.checkoutForm
+    if (checkoutForm.valid) {
+      console.log('Order submitted:', checkoutForm.value);
       // Here you would typically send the order data to your backend API
     } else {
-      this.checkoutForm.markAllAsTouched();
+      checkoutForm.markAllAsTouched();
     }
 
   }
