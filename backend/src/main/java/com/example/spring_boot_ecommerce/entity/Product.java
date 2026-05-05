@@ -51,6 +51,7 @@ public class Product {
     @Column(name = "last_updated")
     private Date lastUpdated;
 
+    // image
     @Column(name = "image_name")
     private String imageName;
 
