@@ -6,6 +6,11 @@ import { Observable, take } from 'rxjs';
 import { State } from '../../../common/state';
 import { StackShopValidators } from '../../validators/stack-shop-validators';
 import { CartService } from '../../services/cart.service';
+import { CheckoutService } from '../../services/checkout.service';
+import { Router } from '@angular/router';
+import { Order } from '../../../common/order';
+import { OrderItem } from '../../../common/order-item';
+import { Purchase } from '../../../common/purchase';
 
 @Component({
   selector: 'app-checkout',
@@ -19,6 +24,8 @@ export class CheckoutComponent implements OnInit {
   fb = inject(FormBuilder);
   formService = inject(FormService);
   cartService = inject(CartService);
+  checkoutService = inject(CheckoutService);
+  router = inject(Router);
   checkoutForm: FormGroup;
   isSameAsShipping = signal<boolean>(true);
   creditCardYears: number[] = [];
@@ -66,14 +73,80 @@ export class CheckoutComponent implements OnInit {
 
   submitOrder() {
     const checkoutForm = this.checkoutForm
-    if (checkoutForm.valid) {
-      console.log('Order submitted:', checkoutForm.value);
-      // Here you would typically send the order data to your backend API
-    } else {
+
+    if (checkoutForm.invalid) {
       checkoutForm.markAllAsTouched();
+      return;
     }
 
+    // set up order
+    let order = new Order();
+    order.totalPrice = this.cartService.totalPrice();
+    order.totalQauntity = this.cartService.totalQuantity();
+
+    // get cart items
+    const cartItems = this.cartService.cartItems;
+
+    // create orderItems from cartItems
+    let orderItems: OrderItem[] = cartItems.map(tempCartItem => new OrderItem(tempCartItem));
+
+    // setup up purchase
+    let purchase = new Purchase();
+
+    //populate purhase - customer
+    purchase.customer = this.checkoutForm.controls['customer'].value;
+
+    // populate purchase -shipping address
+    const shippingAddress = this.checkoutForm.controls['shippingAddress'].value;
+    purchase.shippingAddress = {
+      ...shippingAddress,
+      state: shippingAddress.state,
+      country: shippingAddress.country
+    };
+
+    //populate purchase - billing address
+    const billingAddress = this.checkoutForm.controls['billingAddress'].value;
+    purchase.billingAddress = {
+      ...billingAddress,
+      state: billingAddress.state,
+      country: billingAddress.country
+    };
+
+
+
+    // populate purchase - order and orderItems
+    purchase.order = order;
+    purchase.orderItems = orderItems;
+
+    // call REST API via the CheckoutService
+    this.checkoutService.placeOrder(purchase).subscribe({
+      next: data => {
+        console.log("SUCCESS, tracking number:", data.orderTrackingNumber);
+        this.resetCart();
+      },
+      error: err => {
+        console.error("Checkout failed:", err);
+        alert("There was an error placing your order. Please try again.");
+      }
+    });
+
   }
+  
+
+  resetCart() {
+    // reset cart data
+    this.cartService.cartItems = [];
+    this.cartService.totalQuantity.set(0);
+    this.cartService.totalPrice.set(0);
+
+    // reset the form
+    this.checkoutForm.reset();
+
+    // navifate to products page
+    this.router.navigateByUrl("/products");
+
+  }
+
   toggleBillingAddressForm(e: any) {
     const billingAddress = this.checkoutForm.get('billingAddress');
     const shippingAddress = this.checkoutForm.get('shippingAddress');
