@@ -13,7 +13,37 @@
         <span class="fw-semibold">{{ cartService.totalPrice() | currency }}</span>
     </a>
 
-    <a routerLink="/login" class="btn btn-outline-secondary rounded-circle">
+    @if (authService.currentUser$ | async; as user) {
+    <div class="user-menu" [class.open]="isOpen">
+        <button class="user-btn" (click)="toggleMenu()">
+            <img [src]="user?.picture ?? 'default-avatar.png'" alt="Profile" />
+        </button>
+
+        @if (isOpen) {
+        <div class="dropdown-menu-custom">
+            <div class="user-info">
+                <img [src]="user?.picture ?? 'default-avatar.png'" alt="Profile" />
+                <div>
+                    <div class="name">{{ user?.name }}</div>
+                    <div class="email">{{ user?.email }}</div>
+                </div>
+            </div>
+
+            <hr />
+
+            <a routerLink="/profile" class="dropdown-item">
+                <i class="bi bi-person"></i> Profile
+            </a>
+
+            <button class="dropdown-item" (click)="authService.logout()">
+                <i class="bi bi-box-arrow-right"></i> Logout
+            </button>
+        </div>
+        }
+    </div>
+    } @else {
+    <a routerLink="/login" class="btn btn-outline-secondary rounded-circle user-btn">
         <i class="bi bi-person"></i>
     </a>
+    }
 </div>
